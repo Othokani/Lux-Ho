@@ -4,10 +4,18 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #2E8B57; /* Verde oscuro, calmante */
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -41,20 +49,11 @@ nav ul li a:hover {
 }
 
 main {
-    padding: 4rem 1rem;
-    margin-top: 3rem;
-}
-
-section {
-    margin-bottom: 2rem;
-    background: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-top: 5rem;
 }
 
 section#home {
-    background: url('hero-image.jpg') no-repeat center center/cover;
+    background: #87CEEB; /* Azul claro, asociado con la salud visual */
     color: #fff;
     text-align: center;
     height: 100vh;
@@ -69,12 +68,35 @@ section#home .content {
     border-radius: 8px;
 }
 
+.cta-button {
+    background-color: #2E8B57;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #1E6743;
+}
+
+.info-section {
+    padding: 4rem 0;
+    background: #fff;
+    color: #333;
+}
+
+.info-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
