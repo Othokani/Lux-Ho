@@ -1,5 +1,11 @@
+/* Asegura que todo se ajuste dentro del viewport */
+* {
+    box-sizing: border-box;
+}
+
 /* General */
 body {
+    overflow-x: hidden; /* Oculta cualquier contenido que se desborde horizontalmente */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -9,16 +15,45 @@ body {
 
 /* Encabezado */
 header {
-    background-color: #40E0D0; /* Turquesa Principal */
+    background-color: #2C3E50; /* Azul Marino para contrastar con la imagen */
     padding: 1rem;
     text-align: center;
     color: white;
+    position: fixed; /* Fija la cabecera en la parte superior */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Contenedor de la cabecera */
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+
+/* Imagen de logo en la cabecera */
+header .logo {
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+    width: 50px; /* Ajusta el tamaño para que sea sutil pero visible */
+    height: 50px; /* Mantiene la proporción de la imagen */
+    margin-left: auto; /* Empuja la imagen al lado derecho */
+}
+
+main {
+    padding-top: 70px; /* Añade un relleno superior para que el contenido no quede oculto detrás de la cabecera */
 }
 
 /* Navegación */
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    gap: 20px;
 }
 
 nav ul li {
@@ -92,7 +127,15 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
-    position: fixed;
+    position: static; /* El footer ya no es fijo */
     width: 100%;
     bottom: 0;
+}
+
+/* Estilos de imagen general */
+img {
+    max-width: 30%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
 }
