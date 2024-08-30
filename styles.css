@@ -1,102 +1,98 @@
+/* General */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #F8F8F8; /* Blanco Suave */
+    color: #696969; /* Gris Oscuro */
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
+/* Encabezado */
 header {
-    background-color: #2E8B57; /* Verde oscuro, calmante */
-    color: #fff;
-    padding: 1rem 0;
+    background-color: #40E0D0; /* Turquesa Principal */
+    padding: 1rem;
     text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+    color: white;
 }
 
+/* Navegación */
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    margin: 0;
 }
 
 nav ul li {
+    display: inline;
     margin: 0 1rem;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
-    font-weight: 700;
-    transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    color: #ddd;
-}
-
-main {
-    padding-top: 5rem;
-}
-
-section#home {
-    background: #87CEEB; /* Azul claro, asociado con la salud visual */
-    color: #fff;
-    text-align: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-section#home .content {
-    background: rgba(0, 0, 0, 0.5);
+/* Secciones */
+section {
     padding: 2rem;
-    border-radius: 8px;
+    text-align: center;
+    background-color: #F8F8F8; /* Blanco Suave */
 }
 
-.cta-button {
-    background-color: #2E8B57;
-    color: #fff;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
+#products .product {
+    background-color: white;
+    margin: 1rem 0;
+    padding: 1rem;
     border-radius: 5px;
-    margin-top: 1rem;
-    display: inline-block;
-    transition: background-color 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.cta-button:hover {
-    background-color: #1E6743;
+/* Sección de productos */
+#products .product {
+    background-color: #D3D3D3; /* Gris Claro */
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.info-section {
-    padding: 4rem 0;
-    background: #fff;
-    color: #333;
+/* Botones */
+button {
+    background-color: #FF7F50; /* Coral */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.info-section h2 {
-    text-align: center;
-    margin-bottom: 2rem;
+button:hover {
+    background-color: #FF6347; /* Un tono más oscuro de Coral para hover */
 }
 
+/* Encabezados */
+h1, h2, h3 {
+    color: #2C3E50; /* Azul Marino */
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #2C3E50; /* Azul Marino */
+    color: white;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
